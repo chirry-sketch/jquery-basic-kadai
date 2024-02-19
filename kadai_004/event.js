@@ -1,8 +1,9 @@
-$(window).on('load scroll', () => {
-  $(function() {
   // ロードされた場合
-  console.log('loadイベントが発生しました');
+  $(window).on('load',function ()  {
+    console.log('loadイベントが発生しました');
+});
+
   // スクロールされた場合
+  $(window).on('scroll',() =>  {
   console.log('scrollイベントが発生しました');
  });
-});
